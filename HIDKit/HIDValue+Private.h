@@ -15,5 +15,6 @@
 @property (readonly) IOHIDValueRef value;
 
 - (instancetype)initWithValue:(IOHIDValueRef)value element:(HIDElement *)element;
+- (instancetype)initWithValue:(IOHIDValueRef)value;
 
 @end

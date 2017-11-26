@@ -12,6 +12,7 @@
 #import "HIDDevice+Private.h"
 #import "HIDElement+Private.h"
 #import "HIDValue+Private.h"
+#import "HIDValue.h" 
 
 @import IOKit.hid;
 

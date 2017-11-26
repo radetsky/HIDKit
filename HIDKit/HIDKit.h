@@ -16,11 +16,11 @@ FOUNDATION_EXPORT const unsigned char HIDKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <HIDKit/PublicHeader.h>
 
-#import <HIDKit/HIDManager.h>
-#import <HIDKit/HIDDevice.h>
-#import <HIDKit/HIDDevice+DeviceProperties.h>
-#import <HIDKit/HIDElement.h>
-#import <HIDKit/HIDElement+ElementProperties.h>
-#import <HIDKit/HIDValue.h>
-#import <HIDKit/HIDQueue.h>
-#import <HIDKit/HIDTransaction.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDManager.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDDevice.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDDevice+DeviceProperties.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDElement.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDElement+ElementProperties.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDValue.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDQueue.h>
+#import </Users/rad/Downloads/HIDKit/HIDKit/HIDTransaction.h>

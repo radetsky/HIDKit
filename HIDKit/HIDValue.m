@@ -47,7 +47,7 @@
 		NSParameterAssert(element);
 		
 		_element = element;
-		uint64_t timestamp = mach_absolute_time();
+		uint64_t timestamp = time(NULL);
 		
 		if (copyFlag)
 		{
@@ -74,11 +74,29 @@
 		NSParameterAssert(element);
 		
 		_element = element;
-		uint64_t timestamp = mach_absolute_time();
+		uint64_t timestamp = time(NULL);
 		
 		_value = IOHIDValueCreateWithIntegerValue(NULL, element.element, timestamp, (CFIndex)value);
 	}
 	return self;
+}
+
+- (instancetype)initWithValue:(IOHIDValueRef)value
+{
+    self = [super init];
+    if (self)
+    {
+        NSParameterAssert(value);
+        
+        if (CFGetTypeID(value) != IOHIDValueGetTypeID() )
+        {
+            return nil;
+        }
+        
+        _value = value;
+        CFRetain(_value);
+    }
+    return self;
 }
 
 - (instancetype)initWithValue:(IOHIDValueRef)value element:(HIDElement *)element
